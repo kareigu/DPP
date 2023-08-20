@@ -20,7 +20,7 @@
  ************************************************************************************/
 #pragma once
 
-#if defined _MSC_VER || defined __GNU__ || defined __clang__ && (defined(_M_IX86) || defined(_M_X64))
+#if defined _MSC_VER || defined __GNU__ || defined __clang__ && (defined _M_IX86 || defined _M_X64)
 #include <immintrin.h>
 using avx_512_float = __m512;
 using avx_512_int = __m512i;
